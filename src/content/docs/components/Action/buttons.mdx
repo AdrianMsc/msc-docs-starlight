@@ -1,0 +1,154 @@
+---
+title: Button
+description: Buttons components
+---
+
+To maintain hierarchy and consistency throughout our experience, we use different emphasis of buttons.
+
+## Default buttons
+
+<div class="flex gap-2 items-center bg-white p-5 w-fit rounded">
+  <button class="msc-btn msc-btn-blue-solid">Blue Solid</button>
+  <button class="msc-btn msc-btn-blue-outline">Blue Outline</button>
+  <button class="msc-btn msc-btn-transparent">Text Only</button>
+  <button class="msc-btn msc-btn-blue-solid msc-btn-sm">Small Button</button>
+</div>
+
+```html
+<button class="msc-btn msc-btn-blue-solid">Blue Solid</button>
+<button class="msc-btn msc-btn-blue-outline">Blue Outline</button>
+<button class="msc-btn msc-btn-transparent">Text Only</button>
+<button class="msc-btn msc-btn-blue-solid msc-btn-sm">Small Button</button>
+```
+
+## With Icon
+
+<div class="flex gap-2 items-center bg-white py-5 w-fit rounded px-4">
+  <button class="msc-btn msc-btn-blue-solid msc-btn-icon">
+    <img src="../../../../../static/icons/download.svg" class="icon-btn" />
+    Primary
+  </button>
+  <button class="msc-btn msc-btn-blue-outline msc-btn-icon">
+    <img src="../../../../../static/icons/download-blue.svg" class="icon-btn" />
+    Secondary
+  </button>
+  <button class="msc-btn msc-btn-transparent msc-btn-icon">
+    <img src="../../../../../static/icons/download-blue.svg" class="icon-btn" />
+    Tertiary
+  </button>
+</div>
+
+```jsx
+  <button class="msc-btn msc-btn-blue-solid msc-btn-icon">
+    <img src="..." class="icon-btn" />
+    Primary
+  </button>
+  <button class="msc-btn msc-btn-blue-outline msc-btn-icon">
+    <img src="..." class="icon-btn" />
+    Secondary
+  </button>
+  <button class="msc-btn msc-btn-transparent msc-btn-icon">
+    <img src="..." class="icon-btn" />
+    Tertiary
+  </button>
+  <button class="msc-btn msc-btn-blue-solid msc-btn-icon msc-btn-sm">
+    <img src="..." class="icon-btn" />
+    Small
+  </button>
+```
+
+## Loading State
+
+<div class="flex gap-2 items-center bg-white p-5 w-fit rounded">
+  <button class="msc-btn msc-btn-blue-solid">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1"></div>
+      <div class="msc-btn-dot2"></div>
+      <div class="msc-btn-dot3"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-blue-outline">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1-blue"></div>
+      <div class="msc-btn-dot2-blue"></div>
+      <div class="msc-btn-dot3-blue"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-transparent">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1-blue"></div>
+      <div class="msc-btn-dot2-blue"></div>
+      <div class="msc-btn-dot3-blue"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-blue-solid msc-btn-sm">
+    <div class="msc-btn-dots-container-sm">
+      <div class="msc-btn-dot1"></div>
+      <div class="msc-btn-dot2"></div>
+      <div class="msc-btn-dot3"></div>
+    </div>
+  </button>
+</div>
+
+```jsx
+<button class="msc-btn msc-btn-blue-solid">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1"></div>
+      <div class="msc-btn-dot2"></div>
+      <div class="msc-btn-dot3"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-blue-outline">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1-blue"></div>
+      <div class="msc-btn-dot2-blue"></div>
+      <div class="msc-btn-dot3-blue"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-transparent">
+    <div class="msc-btn-dots-container">
+      <div class="msc-btn-dot1-blue"></div>
+      <div class="msc-btn-dot2-blue"></div>
+      <div class="msc-btn-dot3-blue"></div>
+    </div>
+  </button>
+  <button class="msc-btn msc-btn-blue-solid msc-btn-sm">
+    <div class="msc-btn-dots-container-sm">
+      <div class="msc-btn-dot1"></div>
+      <div class="msc-btn-dot2"></div>
+      <div class="msc-btn-dot3"></div>
+    </div>
+  </button>
+```
+
+## Disabled State
+
+<div class="flex gap-2 items-center bg-white p-5 w-fit rounded">
+  <button disabled class="msc-btn disabled:msc-btn-blue-solid">
+    Primary
+  </button>
+  <button disabled class="msc-btn disabled:msc-btn-blue-outline">
+    Secondary
+  </button>
+  <button disabled class="msc-btn disabled:msc-btn-transparent">
+    Tertiary
+  </button>
+  <button disabled class="msc-btn disabled:msc-btn-blue-solid msc-btn-sm">
+    Small Button
+  </button>
+</div>
+
+```jsx
+<button disabled class="msc-btn msc-btn-solid-disabled">
+  Primary
+</button>
+<button disabled class="msc-btn msc-btn-outline-disabled">
+  Secondary
+</button>
+<button disabled class="msc-btn msc-btn-transparent-disabled">
+  Tertiary
+</button>
+<button class="msc-btn msc-btn-solid-disabled msc-btn-sm">
+  Small Button
+</button>
+```
