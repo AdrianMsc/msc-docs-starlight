@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* Light mode colors. */
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   --sl-color-accent-low: #c7d6ff;
-  --sl-color-accent: #1C58EE;
-  --sl-color-accent-high: #0D3AA9;
+  --sl-color-accent: #1c58ee;
+  --sl-color-accent-high: #0d3aa9;
   --sl-color-white: #17181c;
   --sl-color-gray-1: #24272f;
   --sl-color-gray-2: #353841;
@@ -18,25 +18,35 @@
   --sl-color-black: #ffffff;
 }
 
+:root[data-theme="light"] body {
+  background-color: #f2f2f2;
+}
+
+:root[data-theme="light"] .header {
+  background-color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.sl-markdown-content :not(a, strong, em, del, span, input, code)+ :not(a, strong, em, del, span, input, code, :where(.not-content *)) {
+.sl-markdown-content
+  :not(a, strong, em, del, span, input, code)
+  + :not(a, strong, em, del, span, input, code, :where(.not-content *)) {
   margin-top: 0rem;
 }
 
-h2{
+h2 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
 
-.expressive-code{
+.expressive-code {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
 
-.site-title > img{
+.site-title > img {
   width: fit-content;
   height: 20px;
 }
