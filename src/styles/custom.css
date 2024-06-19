@@ -18,6 +18,21 @@
   --sl-color-black: #ffffff;
 }
 
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: #131e4f;
+  --sl-color-accent: #1C58EE;
+  --sl-color-accent-high: #b3c7ff;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #ededf6;
+  --sl-color-gray-2: #c1c1cc;
+  --sl-color-gray-3: #89899f;
+  --sl-color-gray-4: #56566a;
+  --sl-color-gray-5: #363648;
+  --sl-color-gray-6: #252536;
+  --sl-color-black: #17171f;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,4 +58,15 @@ h2{
 
 .site-title :nth-child(2) {
   display: none;
+}
+
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows[type="number"] {
+  -moz-appearance: textfield;
 }
