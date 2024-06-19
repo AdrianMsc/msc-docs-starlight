@@ -35,3 +35,12 @@ h2{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
+
+.site-title > img{
+  width: fit-content;
+  height: 20px;
+}
+
+.site-title :nth-child(2) {
+  display: none;
+}

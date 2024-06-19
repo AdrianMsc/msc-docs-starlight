@@ -7,11 +7,20 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "Home",
+      title: "MSC",
+      logo: {
+        src: "./src/assets/msc-logo.svg",
+      },
       // social: {
       //   github: "https://github.com/withastro/starlight",
       // },
       sidebar: [
+        {
+          label: "Start Here",
+          autogenerate: {
+            directory: "guides",
+          },
+        },
         {
           label: "Foundations",
           autogenerate: {
