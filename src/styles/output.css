@@ -155,6 +155,23 @@ code, kbd, samp, pre {
   --tw-contain-style:  ;
 }
 
+.component-container {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+}
+
 .msc-btn {
   cursor: pointer;
   border-radius: 9999px;
@@ -446,6 +463,10 @@ code, kbd, samp, pre {
   width: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -460,13 +481,12 @@ code, kbd, samp, pre {
   height: fit-content;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .max-w-\[1500px\] {
   max-width: 1500px;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
@@ -487,10 +507,6 @@ code, kbd, samp, pre {
 
 .items-center {
   align-items: center;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-10 {
@@ -518,14 +534,8 @@ code, kbd, samp, pre {
   padding: 1.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-center {
@@ -539,6 +549,11 @@ code, kbd, samp, pre {
 .text-fuchsia-600 {
   --tw-text-opacity: 1;
   color: rgb(192 38 211 / var(--tw-text-opacity));
+}
+
+.text-primary-blue {
+  --tw-text-opacity: 1;
+  color: rgb(28 88 238 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -616,6 +631,16 @@ h2{
 .expressive-code{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
+}
+
+.site-title > img{
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+}
+
+.site-title :nth-child(2) {
+  display: none;
 }
 
 .disabled\:msc-btn-blue-solid:disabled {
