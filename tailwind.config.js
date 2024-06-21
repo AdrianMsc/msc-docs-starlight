@@ -3,6 +3,7 @@ import starlightPlugin from "@astrojs/starlight-tailwind";
 const colors = require("./utilities/colors");
 
 module.exports = {
+  purge: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   content: ["./src/**/*.{js,jsx,ts,tsx,html,mdx}"],
   theme: {
     extend: {
@@ -31,7 +32,7 @@ module.exports = {
     },
   },
   plugins: [
-    starlightPlugin,
+    starlightPlugin(),
     require("./msc-components/global"),
     require("./msc-components/msc-buttons"),
     require("./msc-components/msc-icons"),

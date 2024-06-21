@@ -40,6 +40,6 @@ export default defineConfig({
         themes: ["github-dark"],
       },
     }),
-    tailwind,
+    tailwind(),
   ],
 });
