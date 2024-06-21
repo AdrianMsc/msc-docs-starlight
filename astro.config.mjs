@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://adrianmsc.github.io",
-  base: "",
+  base: "/msc-docs-starlight/",
   integrations: [
     starlight({
       title: "MSC",
