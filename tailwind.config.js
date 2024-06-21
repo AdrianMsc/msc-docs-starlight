@@ -31,7 +31,7 @@ module.exports = {
     },
   },
   plugins: [
-    starlightPlugin(),
+    starlightPlugin,
     require("./msc-components/global"),
     require("./msc-components/msc-buttons"),
     require("./msc-components/msc-icons"),
