@@ -30,6 +30,10 @@ html {
   scroll-behavior: smooth;
 }
 
+tbody tr:nth-child(odd){
+  background-color: #ffffff;
+}
+
 .sl-markdown-content
   :not(a, strong, em, del, span, input, code)
   + :not(a, strong, em, del, span, input, code, :where(.not-content *)) {
@@ -55,7 +59,7 @@ h2 {
   display: none;
 }
 
-
+/* MSC Components */
 .no-arrows::-webkit-outer-spin-button,
 .no-arrows::-webkit-inner-spin-button {
   -webkit-appearance: none;
