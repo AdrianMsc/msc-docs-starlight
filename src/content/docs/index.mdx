@@ -4,8 +4,6 @@ description: Get started building your docs site with Starlight.
 template: splash
 hero:
   tagline: Empowering Innovation Through Unified Design.
-  image:
-    file: ../../assets/houston.webp
   actions:
     - text: Go to Docs
       link: guides/getting-started
@@ -15,3 +13,12 @@ hero:
       link: https://mscdirectjira.atlassian.net/wiki/spaces/PD/pages/2251784264/Batch+Release+Notes
       icon: external
 ---
+
+import LottieAnimation from "astro-integration-lottie/Lottie.astro";
+
+<div className="size-[500px] max-md:hidden">
+  <LottieAnimation
+    src="../../../static/img/animation.json"
+    autoplay="visible"
+  />
+</div>

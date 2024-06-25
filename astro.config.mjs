@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
+import lottie from "astro-integration-lottie";
 
 export default defineConfig({
   site: "https://adrianmsc.github.io",
@@ -42,5 +43,6 @@ export default defineConfig({
     }),
     tailwind(),
     react(),
+    lottie(),
   ],
 });
