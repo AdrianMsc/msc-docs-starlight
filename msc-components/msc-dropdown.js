@@ -41,7 +41,8 @@ module.exports = function ({ addComponents, theme }) {
       },
     },
     ".dropdown-button": {
-      "@apply flex items-center w-full place-content-between mx-4 my-3.5": {},
+      "@apply flex items-center w-full place-content-between mx-4 my-3.5 bg-transparent cursor-pointer":
+        {},
     },
     ".dropdown-placeholder": {
       "@apply font-normal text-sm": {},
